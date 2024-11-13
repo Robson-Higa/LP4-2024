@@ -1,17 +1,17 @@
-import { useRoutes } from 'react-router-dom';
-import { UserContextProvider } from './context/UserContext';
-import routes from './routes';
-import Header from './components/Header/index'
+import { useRoutes } from "react-router-dom";
+import { UserContextProvider } from "./context/UserContext";
+import routes from "./routes";
+import Header from "./components/Header";
 
 const App = () => {
   const elements = useRoutes(routes);
 
   return (
-  <UserContextProvider>
+    <UserContextProvider>
       <Header />
-        {elements}
-      </UserContextProvider>
-);
+      {elements}
+    </UserContextProvider>
+  );
 };
 
 export default App;

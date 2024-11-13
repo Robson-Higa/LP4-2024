@@ -1,23 +1,17 @@
-import { BackButton } from "../pages/Details/styles"
-import {
-  NoResultsFoundMessage,
-  ResultsFoundMessage,
-} from "../pages/Home/styles"
-
 export const en = {
   translation: {
     home: {
       searchButton: "Search",
-      ResultsFoundMessage: "{{ numberOfResults }} result(s) found",
-      NoResultsFoundMessage: "No words found",
+      resultsFoundMessage: "{{numberOfResults}} result(s) found",
+      noResultsFoundMessage: "No words found",
       wordDetails:
-        "{{ numberOfMeanings }} meaning(s) and {{ numberOfAudios }} pronuciation audio(s)",
+        "{{numberOfMeanings}} meaning(s) and {{numberOfAudios}} pronunciation audio(s)",
     },
     details: {
-      detailsTitle: "Meanings of  {{ word }}",
+      detailsTitle: "Meanings of {{word}}",
       meaningsPanelTitle: "Meanings",
       audiosPanelTitle: "Pronunciation audios",
-      BackButton: "Back",
+      backButton: "Back",
     },
   },
-}
+};

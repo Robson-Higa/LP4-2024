@@ -1,5 +1,5 @@
 .header {
-  background-image: -o-linear-gradient(to right, #f1f5f9, #fff);
+  background-image: linear-gradient(to right, #f1f5f9, #fff);
   padding: 10px;
   display: flex;
   align-items: center;
@@ -7,9 +7,9 @@
 }
 
 .flag {
-  width: 204px;
+  width: 24px;
   border: none;
-  background-color: none;
+  background: none;
   padding: 0;
   cursor: pointer;
 }

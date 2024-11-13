@@ -1,19 +1,17 @@
-import { BackButton } from "../pages/Details/styles";
-import { NoResultsFoundMessage, ResultsFoundMessage } from "../pages/Home/styles";
-
 export const ptBR = {
-    translation: {
-        home: {
-            searchButton: "Buscar",
-            ResultsFoundMessage: "{{ numberOfResults }} resultado(s) encontrado(s)",
-            NoResultsFoundMessage: "Nenhuma palavra encontrada",
-            wordDetails: "{{ numberOfMeanings }} significado(s) e {{ numberOfAudios }} áudio(s) de pronúncia"
-        },
-        details: {
-            detailsTitle: "Significados de  {{ word }}",
-            meaningsPanelTitle: "Significados",
-            audiosPanelTitle: "Áudios de Pronúncia",
-            BackButton: "Voltar"
-        },
+  translation: {
+    home: {
+      searchButton: "Buscar",
+      resultsFoundMessage: "{{numberOfResults}} resultado(s) encontrado(s)",
+      noResultsFoundMessage: "Nenhuma palavra encontada",
+      wordDetails:
+        "{{numberOfMeanings}} significado(s) e {{numberOfAudios}} áudio(s) de pronúncia",
     },
-}
+    details: {
+      detailsTitle: "Significados de {{word}}",
+      meaningsPanelTitle: "Significados",
+      audiosPanelTitle: "Áudios de pronúncia",
+      backButton: "Voltar",
+    },
+  },
+};

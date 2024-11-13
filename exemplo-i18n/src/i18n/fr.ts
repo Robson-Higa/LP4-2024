@@ -1,23 +1,17 @@
-import { BackButton } from "../pages/Details/styles"
-import {
-  NoResultsFoundMessage,
-  ResultsFoundMessage,
-} from "../pages/Home/styles"
-
 export const fr = {
   translation: {
     home: {
       searchButton: "Recherche",
-      ResultsFoundMessage: "{{ numberOfResults }} resultát(s) trouvé(s)",
-      NoResultsFoundMessage: "Aucun mot trouvé",
+      resultsFoundMessage: "{{numberOfResults}} resultát(s) trouvé(s)",
+      noResultsFoundMessage: "Aucun mot trouvé",
       wordDetails:
-        "{{ numberOfMeanings }} signification(s) et {{ numberOfAudios }} audio(s) de pronunciation",
+        "{{numberOfMeanings}} signification(s) et {{numberOfAudios}} audio(s) de prononciation",
     },
     details: {
-      detailsTitle: "Signification de {{ word }}",
+      detailsTitle: "Signification de {{word}}",
       meaningsPanelTitle: "Significations",
-      audiosPanelTitle: "Audios de Pronunciation",
-      BackButton: "Revenir",
+      audiosPanelTitle: "Audios de prononciation",
+      backButton: "Revenir",
     },
   },
-}
+};

@@ -1,15 +1,15 @@
-import i18n from "i18next"
-import { initReactI18next } from "react-i18next"
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
 
-import { ptBR } from "./ptBR"
-import { fr } from "./fr"
-import { es } from "./es"
-import { en } from "./en"
+import { ptBR } from "./ptBR";
+import { en } from "./en";
+import { es } from "./es";
+import { fr } from "./fr";
 
-i18n.use(initReactI18next).init ({
+i18n.use(initReactI18next).init({
   lng: "ptBR",
   debug: true,
-  resouces: { ptBR, en, es, fr },
-})
+  resources: { ptBR, en, es, fr },
+});
 
-export default i18n
+export default i18n;
