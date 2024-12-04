@@ -74,7 +74,7 @@ const Home = () => {
       {!isSearching && words.length > 0 && (
         <>
           <ResultsFoundMessage>
-            {words.length} resultado(s) encontrado(s)
+            {t("home.resultsFoundMessage", {numberOfResults, }}
           </ResultsFoundMessage>
 
           {words.map((w, index) => (
@@ -85,7 +85,7 @@ const Home = () => {
 
       {!isSearching && noWordFound && (
         <NoResultsFoundMessage>
-          Nenhuma palavra encontrada
+          {t("home.noResultsFoundMessage")}
         </NoResultsFoundMessage>
       )}
     </HomeContainer>

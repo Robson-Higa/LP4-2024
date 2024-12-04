@@ -1,4 +1,4 @@
-export const ptBR = {
+export const pt = {
   translation: {
     home: {
       searchButton: "Buscar",
