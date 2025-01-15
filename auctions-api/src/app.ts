@@ -44,7 +44,7 @@ io.on("connection", (socket) => {
      */
 
     const names = ["Fulano", "Beltrano", "Cicrano"];
-    let bidValue = 510;
+    let bidValue = messageObj.initialBid;
     setInterval(() => {
       const bid: Bid = {
         auctionId: messageObj.id,

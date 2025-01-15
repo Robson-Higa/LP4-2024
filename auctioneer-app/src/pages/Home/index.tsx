@@ -12,6 +12,7 @@ const Home = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [initialBid, setInitialBid] = useState(1);
+  const [deadline, setdeadline] = useState(1);
   const [submitting, isSubmitting] = useState(false);
 
   const navigate = useNavigate();
@@ -39,6 +40,7 @@ const Home = () => {
             title,
             description,
             initialBid,
+            deadline,
           };
           console.log(auction);
 
@@ -89,6 +91,16 @@ const Home = () => {
             min="1"
             value={initialBid}
             onChange={(e) => setInitialBid(+e.target.value)}
+          />
+          <input
+            type="number"
+            required
+            placeholder="Prazo do leilão (Minutos)"
+            min="5"
+            max="30"
+            step="5"
+            value={deadline}
+            onChange={(e) => setdeadline(+e.target.value)}
           />
 
           <input type="submit" value="Iniciar" />

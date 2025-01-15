@@ -1,7 +1,8 @@
 export type Auction = {
-  id: string;
-  imageURL: string;
-  title: string;
-  description: string;
-  initialBid: number;
-};
+  id: string
+  imageURL: string
+  title: string
+  description: string
+  initialBid: number
+  deadline: number
+}
